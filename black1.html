@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeWithGautam</title>
+    <style>
+        *{
+            text-decoration: none;
+            margin: 0%;
+        }
+        
+        nav{position: relative;
+            width: 100vw;
+            top: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 80px;
+        }
+        a:hover{
+            transform: scale(1.1);
+        }
+        nav a{
+            font-size: 20px;
+            color: black;
+        }
+        nav button{
+            font-size: 15px;
+            border-radius: 3px;
+            width: 80px;
+            height: 30px;
+        }
+        nav button:hover{
+            transform: scale(1.010);
+        }
+        .mercendise button{
+            font-size: 20px;
+            width: 130px;
+            height: 35px;
+            border-radius: 20px;
+        }
+        input{ border-radius: 5px;
+            width: 240px;
+            font-size: 15px;
+            height: 30px;
+        }
+        nav i{
+            font-size: 25px;
+            position: relative;
+            right: 70px;
+        }
+        nav h1{
+            font-size: 24px;
+        }
+        .background img{ 
+            width: 100vw;
+            height: auto;
+            filter: opacity(50%) blur(3px);
+        }
+        .overlay{ max-width: 100vw;
+            display: flex;
+            align-items: center;
+            font-size: 30px;
+            flex-direction: column;
+            position: relative;
+            bottom: 790px;
+        }
+        .overlay button{ 
+            width: 200px;
+            height: 40px;
+            border-radius: 30px;
+            background-color: gray;
+            font-size: 16px;
+        }
+        .overlay button:hover{
+            transform: scale(1.01);
+        }
+        .overlay h1{
+            position: relative;
+            top: 50px;
+        }
+        .overlay h3{
+            position: relative;
+            top: 60px;
+        }
+        .overlay p{
+            position: relative;
+            top: 80px;
+            font-size: 20px;
+        }
+        .round button{ position: relative;
+            top: 100px;
+            background-color: azure;
+            border-radius: 10px;
+        }
+        .bigbutton{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            position: relative;
+            bottom: 550px;
+        }
+        .bigbutton button{
+            width: 300px;
+            height: 110px;
+            border-radius: 12px;
+            font-size: 20px;
+        }
+        .danger{ max-width: 100vw;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: 25px;
+            margin-top: 60px;
+            position: relative;
+            bottom: 400px;
+        }
+        .container1{ height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 20px;
+            position: relative;
+            bottom: 450px;
+          }
+          .main{
+            background-color: rgb(245, 248, 251);
+            height: 380px;
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+             box-shadow: 2px 4px 3px gray;
+            
+          }
+          .main:hover{
+            transform: scale(1.02);
+          }
+          .main img{
+            width: 400px;
+            height: 200px;
+          }
+          .content{
+            width: 300px;
+            height: 250px;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        
+          }
+          .container2{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-size: 20px;
+            position: relative;
+            bottom: 380px;
+         }
+
+         .heading{ max-width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            bottom: 450px;
+            font-size: 23px;
+         }
+         .heading2{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            font-size: 27px;
+             position: relative;
+            bottom: 280px;
+
+         }
+
+           .container3{ 
+           position: relative;
+           bottom: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 120px;
+           }
+           .company img{
+            width: 120px;
+            height: 40px;
+           }
+          
+           .company img:hover{
+            transform: scale(1.1);
+           }
+           .g1{
+            position: relative;
+            bottom: 80px;
+            font-size: 18px;
+           }
+        
+          .g2{
+            position: relative;
+            left:  150px;
+            top: 20px;
+            font-size: 22px;
+         }
+         .g3{ position: relative;
+            top: 20px;
+            font-size: 20px;
+            left:  150px;}
+
+         .section{ height: 100vh;
+            width: 100vw;
+            position: relative;
+            bottom: 150px;
+            background-color: rgb(245, 248, 251);
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 20px;
+         }
+         .content1{ width: 400px;
+            height: 260px;
+            background-color: rgb(236, 235, 233);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+    
+         }
+          .content1 i{
+            font-size: 30px;
+            
+          }
+          .learn{
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            gap: 30px;
+            color: rgb(60, 54, 54);
+    
+          }
+          .testimonial{ width: 100vw;
+            height: 400px;
+             display: flex;
+            align-items: center;
+               justify-content: space-around;
+        
+            
+          }
+          .paragraph{ width: 550px;
+            height: 300px;
+            font-size: 20px;
+            background-color: rgb(245,248,251);
+            border-radius: 20px;
+           
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+          }
+          .mark{
+            font-size: 50px;
+           
+          }
+          .term { text-align: center;
+            
+          }
+          .paragraph:hover{
+           transform: scale(1.1);
+          }
+          .gharda {
+            width: 100vw;
+            height: 300px;
+            background-image:url('https://wallpaperaccess.com/full/4107359.jpg') ;
+            background-size: cover;
+            filter: opacity(50%) blur(2px);
+            position: absolute;
+
+          }
+          .gar1{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          .tata{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            font-size: 30px;
+            justify-content: space-around;
+            position: relative;
+            margin-bottom: 50px;
+        
+          }
+          .gar1 h1{
+            font-size: 60px;
+          }
+          .gar1 button{ width: 200px;
+            height: 50px;
+            font-size: 25px;
+            color: white;
+            background-color: black;
+            text-align: center;
+          
+          }
+          footer{
+            width: 100vw;
+        height: 300px;
+           
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+    footer h3{
+        font-size: 20px;
+    }
+    .learn a{ color: rgb(54, 51, 51);
+        
+        
+    }
+
+       button:hover{ transform: scale(1.1);
+
+       }
+       
+        
+
+        
+    </style>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+<body>
+    <nav>
+        <h1>&lt;/&gt;CodeWithGautam</h1>
+        <a href="">Home</a>
+        <a href="">Cources</a>
+        <a href="">Tutorial</a>
+        <a href="">Blog</a>
+        <a href="">Notes</a>
+        <a href="">Contact</a>
+       <div class="mercendise"> <button>Merchendice</button></div>
+        <input type="text" placeholder="Search........."><i class="fa-brands fa-searchengin" style="color: black;"></i>
+        <button>Login</button>
+        <button>Sign-up</button>
+    </nav>
+    <div class="background">
+        <img src="https://static.vecteezy.com/system/resources/previews/046/759/544/non_2x/smiling-young-software-engineer-working-on-colorful-computer-code-background-free-photo.jpeg" alt="">
+    </div>
+    <div class="overlay">
+        <button>Learn coding the right way</button>
+        <h1>Welcome to CodeWithGautam</h1>
+        <h3>Learn Web Development</h3>
+        <br>
+        <p>Confused about which cources to take? We got you covered ! Browse cources and</p>
+        <p>discover the best option for you. It's free! <b>CodeWithGautam</b> is my effort to teach the</p>
+        <p>basics and those coding techniques in short time that took me years to master.</p>
+        <br>
+        <div class="round"><button>Explore Cources</button> 
+        <button>Read Articles</button></div>
+    </div>
+            <div class="bigbutton">
+                <button><h2>100+ 500k 5.0
+                </h2> <p>cources students rating</p></button>
+            </div>
+            <div class="danger"><h2>Code Smarter with Real-World Practice</h2>
+                <br>
+    <p>At CodeWithGautam you dont just learn code you engage in practical excercises that reflect real</p>
+    <p>world scenarios.From beginner friendly lessons to advanced cources trusted by professionals</p>
+    <p>                        we prepare you for real world project</p>
+
+</div>
+           <div class="container1">
+           <div class="main">
+            <img src="https://cdn.pixabay.com/photo/2024/06/14/12/15/developer-8829709_960_720.jpg" alt="">
+            <div class="content"> <h4>Web development</h4>
+                <p>Learn HTML,CSS,JavaScript and modern</p>
+                <p>frameworks to build responsive website and web page</p>
+
+            </div>
+           </div>
+           <div class="main">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.Mq7XN5cleYTZxxdJokqreAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+            <div class="content"> <h4>Data Science & AI</h4>
+                <p>Master Python,data analysis,machine learning</p>
+                <p>and artifical intilligence with hand on projects</p>
+            </div>
+           </div>
+           <div class="main">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.gGd4wTCf_KCqN10El3RR6gHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+            <div class="content"> <h4>Data Structure & Algorithms</h4>
+                <p>Learn DSA and crack interview at top companies</p>
+                <p>like Google and Microsoft</p>
+
+            </div>
+           </div>
+    </div>    
+     <div class="heading"> <h2>Empowering Aspiring Developers to Build Their Future in Tech!</h2> </div>
+       
+        <div class="container2">
+            
+            <div class="lake">
+                <p>Students lands their first Developers job in</p>
+                <h1>6 months</h1>
+                <h3>on average</h3>
+            </div>
+            <div class="lake">
+                <p>over</p>
+                <h1>7,000,000+</h1>
+                <h4>students trained</h4>
+            </div>
+            <div class="lake">
+                <p>total youtube views</p>
+                <h1>1 Billion+</h1>
+                <h4>view and counting</h4>
+            </div>
+        </div>
+        <br><br>
+        <div class="heading2"><h3>Helped students achieve their dream job at</h3></div>
+        <div class="container3">
+        <div class="company"><img src="https://tse3.mm.bing.net/th/id/OIP.eSFSxa9ZvlO3yFEF_X2CtgHaEv?w=500&h=320&rs=1&pid=ImgDetMain&o=7&rm=3" alt=""></div>
+         <div class="company"><img src="https://logosmarcas.net/wp-content/uploads/2020/09/Google-Logo-1998-1999.png" alt=""></div>
+          <div class="company"><img src="https://tse4.mm.bing.net/th/id/OIP.B_2yJJ7_y1029feoLFCDfgHaEv?rs=1&pid=ImgDetMain&o=7&rm=3" alt=""></div>
+           <div class="company"><img src="https://logo-marque.com/wp-content/uploads/2020/11/Goldman-Sachs-Embleme.png" alt=""></div>
+           <div class="company"><img src="https://pngimg.com/uploads/paypal/paypal_PNG9.png" alt=""></div>
+            <div class="company"><img src="https://th.bing.com/th/id/R.8d99d9fdd84766d6a16669fef22b23d7?rik=3ze3HiuInNR1hA&riu=http%3a%2f%2f1000logos.net%2fwp-content%2fuploads%2f2017%2f06%2fColor-Samsung-Logo.jpg&ehk=DwDgiI8HgZL5Gk%2bal9vrpD%2biFVaCRGdVh01BNxu07ZQ%3d&risl=&pid=ImgRaw&r=0" alt=""></div>
+            
+            <div class="company"><img src="https://project-ouroboros-s-pub.s3.amazonaws.com/naahfJ2sVPxbk7IVETRpscbU/ZXlnbG9iYWx1YXRfX19FWS1Mb2dvXzUyMHgxNDBfT3B0aW9uLTE-1617887477418952.jpg" alt=""></div>
+            <div class="company"><img src="https://tse2.mm.bing.net/th/id/OIP.0r5ODKIPFwy9bH1vClq7HwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt=""></div>
+            <div class="company"><img src="https://viterbicareers.usc.edu/wp-content/uploads/2018/08/JP-Morgan-logo-300x158.png" alt=""></div>
+            <div class="company"><img src="https://logodix.com/logo/4559.jpg" alt=""></div>
+            <div class="company"><img src="https://www.logodesign.org/wp-content/uploads/2021/12/Screen-Shot-2021-12-03-at-8.28.45-AM-1024x464.png" alt=""></div>
+            <div class="company"><img src="https://tse2.mm.bing.net/th/id/OIP.C6ec0oW6XxZ_LhMwsqVTAgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt=""></div>
+            <div class="g1"><p>+many more companies</p></div>
+        </div>
+       <div class="core"><h1>learn coding with our core offerings</h1></div>
+    <div class="section">
+      <div class="content1">
+        <i class="fa-solid fa-umbrella" style="color: black;"></i>
+        <div class="learn">
+        <h2>Beginner-Friendly</h2>
+        <p>Step-by-step cources designed to <br>beginner to kickstart thier coding journey.</p>
+      </div>
+      </div>
+      <div class="content1">
+        <i class="fa-solid fa-layer-group" style="color:black;"></i>
+        <div class="learn">
+        <h2>Advanced Concepts</h2>
+       
+        <p>Deep dive into advanced topics and frameworks <br>
+        to level up your skills.</p>
+      </div>
+      </div>
+<div class="content1">
+        <i class="fa-solid fa-umbrella" style="color: black;"></i>
+        <div class="learn">
+        <h2>Real-World Projects</h2>
+        <p>Learn by building real-world projects and gain <br>hands-on experiance. </p>
+      </div>
+      </div>
+      <div class="content1">
+        <i class="fa-solid fa-umbrella" style="color: black;"></i>
+        <div class="learn">
+        <h2>Affordable Pricing</h2>
+        <p>Access premium cources at prices tailored for <br>students and professionals.</p>
+      </div>
+      </div>
+      <div class="content1">
+        <i class="fa-solid fa-umbrella" style="color: black;"></i>
+        <div class="learn">
+        <h2>Comprehensive Resources</h2>
+        <p>Gain access to variety of coding resources such <br>at templates,documentation,and code snippets <br>to enhance your learning experiance. </p>
+      </div>
+      </div>
+      <div class="content1">
+        <i class="fa-solid fa-umbrella" style="color: black;"></i>
+        <div class="learn">
+        <h2>Industry Insights</h2>
+        <p>Stay updated with the latest trends and  <br> relivent from the tech industry to keep your <br>skills relevent.</p> 
+      </div>
+      </div>
+      </div>
+    
+      <div class="term"><h1>Testimonials</h1></div>
+      <div class="testimonial">
+        <div class="paragraph">
+            <div class="mark"><p>"</p></div>
+            <p>I don't have words to thank this men.I'm really gratefull</p>
+            <p>have this chanel and the website in my daily routine.If you're</p>
+            <p>a mere beginner,then you can trust this guy and can put</p>
+            <p>your time into this content. I can assure you that it'll be</p>
+            <p>worth it.</p>
+            <br>
+            <p>Mohit Kumar</p>
+            <p>Web Developer</p>
+        </div>
+        <div class="paragraph">
+            <div class="mark"><p>"</p></div>
+            <p>For everyone who want to level up thier #Coding and</p>
+            <p>#Dev skills-seriously, this channel is for you! Both basic</p>
+            <p>and advanced stacks are covered on this channel,and</p>
+            <p>one can learn according to thier skills levels.And the icing</p>
+            <p>on the cake is, most of the content is available for free.</p>
+            <br>
+            <p>Rakesh Shetty</p>
+            <p>Web Developer</p>
+        </div>
+      </div>
+      <div class="tata">
+      <div class="gharda"></div>
+      <div class="gar1">
+        <h1>Start Your Coding Journey</h1>
+        <br>
+        <p>Learn coding step-by-step with india's most loved programming mentor</p>
+        <br>
+        <button>Start Now</button></div>
+      </div>
+      
+      <footer>
+        
+    <div class="learn">
+        <h3>Main</h3>
+        <p><a href="">Home</a></p>
+       <p><a href="">Contact</a></p>
+       <p><a href="">Work with us</a></p>
+       <p><a href="">My Gear</a></p>
+    </div>
+    
+    <div class="learn">
+        <h3>Learn</h3>
+        <p><a href="">Cources</a></p>
+       <p><a href="">Tutorial</a></p>
+       <p><a href="">Notes</a></p>
+    </div>
+    
+    <div class="learn">
+        <h3>Legal</h3>
+        <p><a href="">Terms</a></p>
+       <p><a href="">Privacy</a></p>
+       <p><a href="">Refund</a></p>
+    </div>
+    
+    <div class="learn">
+        <h3>Social</h3>
+        <p><a href="">Youtube</a></p>
+        <p><a href="">Twiter(x)</a></p>
+        <p><a href="">Facebook</a></p>
+        <p><a href="">Github</a></p>
+    </div>
+
+        </footer>
+        
+        
+        
+    
+    
+    
+</body>
+</html>
